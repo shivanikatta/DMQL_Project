@@ -13,10 +13,11 @@ class TableComponent extends Component{
          console.log("In  table col",this.props.columns);
 
         return(
-            <div>  
+            <div style={{padding:50}}>  
             <ReactTable  
                 data={data}  
                 columns={columns}  
+                
                 defaultPageSize = {10}  
                 pageSizeOptions = {[2,4, 6,10]}  
             />  
